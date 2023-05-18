@@ -309,6 +309,35 @@ export default defineConfig({
       ],
     },
     {
+      name: 'TestTableApi',
+      icon: 'highlight',
+      path: '/TestTableApi',
+      routes: [
+        {
+          path: '/TestTableApi',
+          redirect: '/TestTableApi/01',
+        },
+        {
+          name: '01',
+          icon: 'smile',
+          path: '/TestTableApi/01',
+          component: './TestTableApi/01',
+        },
+        // {
+        //   name: 'mind',
+        //   icon: 'smile',
+        //   path: '/TestTableApi/mind',
+        //   component: './TestTableApi/mind',
+        // },
+        // {
+        //   name: 'koni',
+        //   icon: 'smile',
+        //   path: '/TestTableApi/koni',
+        //   component: './TestTableApi/koni',
+        // },
+      ],
+    },
+    {
       path: '/',
       redirect: '/dashboard/analysis',
     },
